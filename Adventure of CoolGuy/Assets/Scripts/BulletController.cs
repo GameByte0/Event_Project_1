@@ -5,6 +5,7 @@ using UnityEngine;
 public class BulletController : MonoBehaviour
 {
 	[SerializeField] private float bulletSpeed;
+	[SerializeField] private float bulletDamage=20;
 	[SerializeField] private Rigidbody2D bulletRigidBody;
 	
 
@@ -22,7 +23,8 @@ public class BulletController : MonoBehaviour
 		
 		if (collision.CompareTag("Enemy"))
 		{
-			collision.GetComponent<Animator>().SetBool("IsHurting", true);
+			collision.GetComponent<BossHealth>().DealDamage((int)bulletDamage);
+			collision.GetComponentInChildren<Animator>().SetBool("IsHurting", true);
 			Destroy(this.gameObject);
 		}
 	}
@@ -36,6 +38,5 @@ public class BulletController : MonoBehaviour
 		yield return new WaitForSeconds(5f);
 		Destroy(this.gameObject);
 
-	}
-	
+	}	
 }

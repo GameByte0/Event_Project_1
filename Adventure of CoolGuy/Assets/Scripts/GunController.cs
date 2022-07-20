@@ -5,6 +5,8 @@ using UnityEngine;
 public class GunController : MonoBehaviour
 {
 	[SerializeField] private GameObject bulletPrefab;
+	[SerializeField] private float bulletDelay;
+	private float nextFireTime;
 
 
 	private void Update()
@@ -27,8 +29,11 @@ public class GunController : MonoBehaviour
 	//}
 	private void BulletSpawn()
 	{
-		if (Input.GetMouseButtonDown(0))
+		if (Input.GetMouseButtonDown(0) && Time.time > nextFireTime)
 		{
+			nextFireTime = Time.time + bulletDelay;
+
+
 			Instantiate(bulletPrefab, transform.position, transform.rotation);
 		}
 

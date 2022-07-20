@@ -11,8 +11,6 @@ public class BossController : MonoBehaviour
 	[SerializeField] private Transform startPoint;
 
 
-	[SerializeField] private BoxCollider2D boxCollider2D;
-
 
 
 	private int givenDamage = 20;
