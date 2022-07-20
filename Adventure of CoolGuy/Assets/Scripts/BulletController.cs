@@ -8,23 +8,27 @@ public class BulletController : MonoBehaviour
 	[SerializeField] private Rigidbody2D bulletRigidBody;
 	
 
+
+
 	void Update()
 	{
 		BulletDirection();
 		StartCoroutine(BulletDestroy());
-		
+
 	}
 
 	private void OnTriggerEnter2D(Collider2D collision)
 	{
+		
 		if (collision.CompareTag("Enemy"))
 		{
+			collision.GetComponent<Animator>().SetBool("IsHurting", true);
 			Destroy(this.gameObject);
-		}		
+		}
 	}
 	private void BulletDirection()
 	{
-		bulletRigidBody.velocity = transform.right * bulletSpeed;	
+		bulletRigidBody.velocity = transform.right * bulletSpeed;
 	}
 
 	IEnumerator BulletDestroy()
@@ -33,4 +37,5 @@ public class BulletController : MonoBehaviour
 		Destroy(this.gameObject);
 
 	}
+	
 }

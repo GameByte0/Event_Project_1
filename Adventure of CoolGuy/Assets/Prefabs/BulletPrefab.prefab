@@ -131,6 +131,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletSpeed: 10
   bulletRigidBody: {fileID: 7412104381240730638}
+  enemy: {fileID: 6036049955829530682, guid: e324fa64c00dd594b9c303a1aa850527, type: 3}
 --- !u!58 &5825714128923234246
 CircleCollider2D:
   m_ObjectHideFlags: 0
