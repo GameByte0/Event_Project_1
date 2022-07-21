@@ -17,6 +17,7 @@ public class BossController : MonoBehaviour
 
 	public void LookAtPlayer()
 	{
+		playerPrefab = GameObject.FindGameObjectWithTag("Player");
 		Vector2 playerPos = new Vector2(playerPrefab.transform.position.x, playerPrefab.transform.position.y);
 
 		if (playerPos.x > transform.position.x && isFlipped)

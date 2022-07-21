@@ -45,7 +45,7 @@ GameObject:
   - component: {fileID: 859810819}
   m_Layer: 0
   m_Name: Boss_1
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -176,7 +176,6 @@ MonoBehaviour:
   playerPrefab: {fileID: 0}
   isFlipped: 0
   startPoint: {fileID: 1160889673}
-  boxCollider2D: {fileID: 0}
 --- !u!1 &6036049955829530682
 GameObject:
   m_ObjectHideFlags: 0

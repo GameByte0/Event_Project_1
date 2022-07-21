@@ -24,4 +24,9 @@ public class BossHealth : MonoBehaviour
 	{
     bossHealth -= damage;
 	}
+
+  public float ReturnHealth()
+	{
+    return bossHealth;
+	}
 }
