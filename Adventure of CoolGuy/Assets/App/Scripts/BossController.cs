@@ -10,6 +10,7 @@ public class BossController : MonoBehaviour
 
 	[SerializeField] private Transform startPoint;
 
+	
 
 
 
@@ -52,4 +53,6 @@ public class BossController : MonoBehaviour
 			return;
 		}
 	}
+
+	
 }

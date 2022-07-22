@@ -385,8 +385,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ced851a304b9394f9f319d0755220b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bossHealthCar: {fileID: 6648677}
-  boss1: {fileID: 6036049955829530682, guid: e324fa64c00dd594b9c303a1aa850527, type: 3}
 --- !u!4 &953740176
 Transform:
   m_ObjectHideFlags: 0
@@ -401,6 +399,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1146535104 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 821489668776496163, guid: 18820c2e25e867c46b6463e70502dc90, type: 3}
+  m_PrefabInstance: {fileID: 821489668101479407}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1146535108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1146535104}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d361bc4e00ff38048b4507ff94252522, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bossHealthCar: {fileID: 6648677}
+  boss1: {fileID: 6036049955829530682, guid: e324fa64c00dd594b9c303a1aa850527, type: 3}
+  emptyCarPrefab: {fileID: 2556288580314229198, guid: 59a9a6e5bfd21c341af1f91f551b05d6, type: 3}
 --- !u!1 &1405603700
 GameObject:
   m_ObjectHideFlags: 0

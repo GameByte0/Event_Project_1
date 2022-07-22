@@ -4,39 +4,41 @@ using UnityEngine;
 
 public class BossHealth : MonoBehaviour
 {
-  [SerializeField] Animator animator;
-  [SerializeField] float bossHealth = 100f;
-   private bool isCar;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-		if (bossHealth<=0)
-			{
-				 if (isCar)
-				 {
-            animator.SetBool("IsCarDestroyed", true);
-
-				 }
-				 else
-				 {
-            //finish
-				 }
-      
-		}
-    }
-  public void DealDamage(int damage)
+	Animator animator;
+	[SerializeField] float bossHealth = 100f;
+	
+	// Start is called before the first frame update
+	void Start()
 	{
-    bossHealth -= damage;
+		animator = gameObject.GetComponentInChildren<Animator>();
 	}
 
-  public float ReturnHealth()
+	// Update is called once per frame
+	void Update()
 	{
-    return bossHealth;
+		if (bossHealth <= 0)
+		{
+			if (gameObject.name== "Boss_1_Car")
+			{
+				animator.SetBool("IsCarDestroyed", true);
+				
+
+			}
+			else
+			{
+				animator.SetBool("IsDead", true);
+			}
+
+		}
+	}
+	public void DealDamage(int damage)
+	{
+		bossHealth -= damage;
+		Debug.Log(gameObject.name + bossHealth);
+	}
+
+	public float ReturnHealth()
+	{
+		return bossHealth;
 	}
 }
