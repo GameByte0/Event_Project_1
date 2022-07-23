@@ -27,6 +27,10 @@ public class BulletController : MonoBehaviour
 			collision.GetComponentInChildren<Animator>().SetBool("IsHurting", true);
 			Destroy(this.gameObject);
 		}
+		else if (collision.CompareTag("Background"))
+		{
+			Destroy(this.gameObject);
+		}
 	}
 	private void BulletDirection()
 	{

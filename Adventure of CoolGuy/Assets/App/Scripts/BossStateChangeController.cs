@@ -11,8 +11,6 @@ public class BossStateChangeController : MonoBehaviour
 
   [SerializeField] GameObject emptyCarPrefab;
 
-  private bool isSecondBossInstantiated;
-
   // Start is called before the first frame update
   void Start()
     {
@@ -34,7 +32,6 @@ public class BossStateChangeController : MonoBehaviour
 
       Instantiate(boss1, bossPosition, bossRotation);
       Instantiate(emptyCarPrefab, bossPosition, bossRotation);
-      isSecondBossInstantiated = true;
     }
   }
 }

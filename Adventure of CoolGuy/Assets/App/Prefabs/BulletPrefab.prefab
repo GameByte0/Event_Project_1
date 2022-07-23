@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5189872228779749598}
   - component: {fileID: 5189872228779749599}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BulletSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 212891406730933276}
   - component: {fileID: 5825714128923234246}
   - component: {fileID: 7412104381240730638}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BulletPrefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -129,7 +129,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a75669fbc16bfc04f9fc7e663e28d52d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletSpeed: 10
+  bulletSpeed: 20
   bulletDamage: 10
   bulletRigidBody: {fileID: 7412104381240730638}
 --- !u!58 &5825714128923234246
@@ -180,7 +180,7 @@ GameObject:
   - component: {fileID: 2333641320998715490}
   - component: {fileID: 4068540739385615833}
   - component: {fileID: 2562271695603240651}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Particle System
   m_TagString: Untagged
   m_Icon: {fileID: 0}

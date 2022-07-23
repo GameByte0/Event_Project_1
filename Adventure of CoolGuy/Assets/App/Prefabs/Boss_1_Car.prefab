@@ -107,7 +107,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a33da38617842f34cb5954c2026cce4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 821489668776496161}
   bossHealth: 100
 --- !u!1 &821489668776496163
 GameObject:
@@ -120,6 +119,7 @@ GameObject:
   - component: {fileID: 821489668776496162}
   - component: {fileID: 821489668776496160}
   - component: {fileID: 821489668776496161}
+  - component: {fileID: 1146535108}
   m_Layer: 0
   m_Name: Boss_CarSprite
   m_TagString: Untagged
@@ -211,6 +211,21 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1146535108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 821489668776496163}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d361bc4e00ff38048b4507ff94252522, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bossHealthCar: {fileID: 6648677}
+  boss1: {fileID: 6036049955829530682, guid: e324fa64c00dd594b9c303a1aa850527, type: 3}
+  emptyCarPrefab: {fileID: 2556288580314229198, guid: 59a9a6e5bfd21c341af1f91f551b05d6, type: 3}
 --- !u!1 &821489669324230375
 GameObject:
   m_ObjectHideFlags: 0

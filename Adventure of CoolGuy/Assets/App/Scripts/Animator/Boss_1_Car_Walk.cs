@@ -42,7 +42,7 @@ public class Boss_1_Car_Walk : StateMachineBehaviour
 
 		//Debug.Log(rigidBody.position + "" + "" + destinationPoint.transform.position);
 
-		if (Vector2.Distance(rigidBody.transform.position, destinationPoint.transform.position) <= 0.5f)
+		if (Vector2.Distance(rigidBody.transform.position, destinationPoint.transform.position) <= 1f)
 		{
 
 			if (destinationPoint == patrolPoints[0])

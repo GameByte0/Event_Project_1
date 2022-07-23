@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1160889673}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: RayPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 859810817}
   - component: {fileID: 859810819}
   - component: {fileID: 3718545700768164737}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Boss_1
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -105,7 +105,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 8050079004319037636, guid: 898cd85ae2cc87c449464306e1071bfb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -200,7 +200,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6036049955829530681}
   - component: {fileID: 6036049955829530687}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Boss_1
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -252,7 +252,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6036049956195659448}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: BossModel
   m_TagString: Untagged
   m_Icon: {fileID: 0}

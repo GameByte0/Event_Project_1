@@ -304,7 +304,7 @@ MonoBehaviour:
   patrolPoints:
   - {fileID: 0}
   - {fileID: 0}
-  carSpeed: 10
+  carSpeed: 25
 --- !u!1102 &7172838549989204043
 AnimatorState:
   serializedVersion: 6
